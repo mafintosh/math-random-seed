@@ -1,6 +1,6 @@
 {
   "name": "math-random-seed",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Similar to random-bytes-seed but returns a number between 0 and 1, similar to Math.random()",
   "main": "index.js",
   "dependencies": {
