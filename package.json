@@ -1,0 +1,26 @@
+{
+  "name": "math-random-seed",
+  "version": "0.0.0",
+  "description": "Similar to random-bytes-seed but returns a number between 0 and 1, similar to Math.random()",
+  "main": "index.js",
+  "dependencies": {
+    "random-bytes-seed": "^1.0.2"
+  },
+  "devDependencies": {
+    "standard": "^8.5.0",
+    "tape": "^4.6.2"
+  },
+  "scripts": {
+    "test": "standard && tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mafintosh/math-random-seed.git"
+  },
+  "author": "Mathias Buus (@mafintosh)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mafintosh/math-random-seed/issues"
+  },
+  "homepage": "https://github.com/mafintosh/math-random-seed"
+}
