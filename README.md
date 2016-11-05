@@ -7,6 +7,8 @@ Useful for reproducible tests.
 npm install math-random-seed
 ```
 
+[![build status](http://img.shields.io/travis/mafintosh/math-random-seed.svg?style=flat)](http://travis-ci.org/mafintosh/math-random-seed)
+
 ## Usage
 
 ``` js
