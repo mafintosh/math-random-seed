@@ -1,5 +1,7 @@
 var randomBytes = require('random-bytes-seed')
 
+var SPACE = 0xffffffff + 1
+
 module.exports = function (seed) {
   var ran = randomBytes(seed)
 
@@ -13,7 +15,6 @@ module.exports = function (seed) {
     random.seed = ran.seed
     random.currentSeed = ran.currentSeed
     var val = next.readUInt32BE(0)
-    if (val === 0xffffffff) val = 0
-    return val / 0xffffffff
+    return val / SPACE
   }
 }
