@@ -4,11 +4,11 @@
   "description": "Similar to random-bytes-seed but returns a number between 0 and 1, similar to Math.random()",
   "main": "index.js",
   "dependencies": {
-    "random-bytes-seed": "^1.0.2"
+    "random-bytes-seed": "^1.0.3"
   },
   "devDependencies": {
-    "standard": "^8.5.0",
-    "tape": "^4.6.2"
+    "standard": "^12.0.1",
+    "tape": "^4.9.2"
   },
   "scripts": {
     "test": "standard && tape test.js"
