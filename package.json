@@ -8,10 +8,10 @@
   },
   "devDependencies": {
     "standard": "^17.1.0",
-    "tape": "^4.9.2"
+    "brittle": "^3.5.2"
   },
   "scripts": {
-    "test": "standard && tape test.js"
+    "test": "standard && brittle test.js"
   },
   "repository": {
     "type": "git",
