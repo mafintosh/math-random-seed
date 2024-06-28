@@ -1,21 +1,21 @@
-var tape = require('tape')
-var seed = require('./')
+const tape = require('tape')
+const seed = require('./')
 
 tape('returns a number', function (t) {
-  var random = seed()
+  const random = seed()
 
-  var b = random()
+  const b = random()
   t.same(typeof b, 'number')
   t.end()
 })
 
 tape('is seedable', function (t) {
-  var random = seed()
+  let random = seed()
 
-  var b1 = random()
+  const b1 = random()
   t.same(typeof b1, 'number')
 
-  var b2 = random()
+  const b2 = random()
   t.same(typeof b2, 'number')
 
   random = seed(random.seed)
