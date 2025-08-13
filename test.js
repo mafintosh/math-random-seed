@@ -1,26 +1,23 @@
-var tape = require('tape')
-var seed = require('./')
+const test = require('brittle')
+const seed = require('./')
 
-tape('returns a number', function (t) {
-  var random = seed()
+test('returns a number', function (t) {
+  const random = seed()
 
-  var b = random()
-  t.same(typeof b, 'number')
-  t.end()
+  const b = random()
+  t.is(typeof b, 'number')
 })
 
-tape('is seedable', function (t) {
-  var random = seed()
+test('is seedable', function (t) {
+  let random = seed()
 
-  var b1 = random()
-  t.same(typeof b1, 'number')
+  const b1 = random()
+  t.is(typeof b1, 'number')
 
-  var b2 = random()
-  t.same(typeof b2, 'number')
+  const b2 = random()
+  t.is(typeof b2, 'number')
 
   random = seed(random.seed)
-  t.same(b1, random())
-  t.same(b2, random())
-
-  t.end()
+  t.is(b1, random())
+  t.is(b2, random())
 })
